@@ -44,3 +44,34 @@ print("Simulating Grocery List...")
 #Display the number of Element in the List to the user.
 print(f"You have : {len(myShoppingList)} in your Lsit")
 print(f"They are {myShoppingList}")
+
+#take what the user bought and remove from the list. 
+item = str(input("\nWhat did you just buy? ")).title()
+myShoppingList.remove(item)
+#Display users item being removed from the lsit 
+print(f"Removing {item} from the List... ")
+#tell the quantity of current List remaining and show them, remove one item again
+print("You have: " + str(len(myShoppingList)) + " items remaining.")
+print(myShoppingList)
+
+#take what the user bought and remove from the list again.
+item = str(input("\nWhat did you just buy? ")).title()
+myShoppingList.remove(item)
+#Display users item being removed from the lsit 
+print(f"Removing {item} from the List... ")
+#tell the quantity of current List remaining and show them, remove one item again
+print("You have: " + str(len(myShoppingList)) + " items remaining.")
+print(myShoppingList)
+
+#take what the user bought and remove from the list again.
+item = str(input("\nWhat did you just buy? ")).title()
+myShoppingList.remove(item)
+#Display users item being removed from the lsit 
+print(f"Removing {item} from the List... ")
+#tell the quantity of current List remaining and show them, remove one item again
+print("You have: " + str(len(myShoppingList)) + " items remaining.")
+print(myShoppingList)
+
+#Tell the user the store is out of an item and should be replaced
+
+

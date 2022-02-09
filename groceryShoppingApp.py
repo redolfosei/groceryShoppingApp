@@ -73,5 +73,13 @@ print("You have: " + str(len(myShoppingList)) + " items remaining.")
 print(myShoppingList)
 
 #Tell the user the store is out of an item and should be replaced
+print("The store is out of " + str(myShoppingList[1]))
+outOFstock = myShoppingList.pop(1)
+print(f"The store is out of {outOFstock} replace the item")
+
+print(myShoppingList)
+#add a new item to the shopping list
+
+
 
 

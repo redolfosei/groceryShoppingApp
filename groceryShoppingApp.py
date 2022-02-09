@@ -8,7 +8,7 @@ minute = dateTime.minute
 
 #Welocme the user to the Grocery Shoppig APP and show time the shopping is happening. 
 print("\n\tWelcome to The Grocery Shopping APP")
-print(f"\nCurrent dat and Time: {month}/{day} {hour}:{minute}\n")
+print(f"\nCurrent date and Time: {month}/{day} {hour}:{minute}\n")
 
 #initialise list 
 myShoppingList = ["Meat","Cheese"]
@@ -73,12 +73,18 @@ print("You have: " + str(len(myShoppingList)) + " items remaining.")
 print(myShoppingList)
 
 #Tell the user the store is out of an item and should be replaced
-print("The store is out of " + str(myShoppingList[1]))
 outOFstock = myShoppingList.pop(1)
-print(f"The store is out of {outOFstock} replace the item")
+print(f"The store is out of {outOFstock}... replace the item")
 
-print(myShoppingList)
 #add a new item to the shopping list
+newItem = input("Enter new Item to be added: ").title()
+myShoppingList.append(newItem)
+
+#Display to the user.
+print("You have these left: " + str(myShoppingList))
+
+
+
 
 
 
